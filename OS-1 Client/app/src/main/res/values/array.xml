@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="server_ips">
+        <item>https://your_server_url.com</item>
+    </string-array>
+</resources>

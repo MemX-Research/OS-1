@@ -1,0 +1,11 @@
+.idea
+__pycache__
+*.pyc
+*.jpg
+*.wav
+*.log
+.vscode
+test
+!data/voices/*
+*.pid
+*.log.*

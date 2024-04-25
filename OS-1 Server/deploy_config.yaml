@@ -1,0 +1,34 @@
+cuda_modules:
+  - name: embedding
+    command: python tools/embedding_server.py
+    args:
+      - --port 7895
+  - name: vicuna
+    command: python -m fastchat.serve.model_worker
+    args:
+      - --model-path /home/deploy/vicuna
+      - --model-name vicuna-7B
+      - --no-register
+      - --stream-interval 1
+      - --host 0.0.0.0
+      - --port 8004
+  - name: llava_worker0
+    command: python -m llava.serve.model_worker
+    args:
+      - --model-path /home/deploy/llava/llava-v1.5-7b
+      - --multi-modal
+      - --limit-model-concurrency 2
+      - --controller http://localhost:10000
+      - --host 0.0.0.0
+      - --port 40000
+      - --worker http://localhost:40000
+  - name: llava_worker1
+    command: python -m llava.serve.model_worker
+    args:
+      - --model-path /home/deploy/llava/llava-v1.5-7b
+      - --multi-modal
+      - --limit-model-concurrency 2
+      - --controller http://localhost:10000
+      - --host 0.0.0.0
+      - --port 40001
+      - --worker http://localhost:40001

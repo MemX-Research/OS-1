@@ -1,0 +1,8 @@
+models/lm/words.dic
+models/en-us-ptm-8khz/feat.params
+models/en-us-ptm-8khz/mdef
+models/en-us-ptm-8khz/means
+models/en-us-ptm-8khz/noisedict
+models/en-us-ptm-8khz/sendump
+models/en-us-ptm-8khz/transition_matrices
+models/en-us-ptm-8khz/variances

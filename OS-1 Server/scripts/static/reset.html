@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EgoChat Reset Password</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', path='/style.css') }}">
+
+</head>
+<body>
+    <h1>EgoChat Reset Password</h1>
+    {% if error_message %}
+        <p style="color: red;">{{ error_message }}</p>
+    {% endif %}
+    
+    <form method="POST" action="/reset">
+        <label for="user_id">User ID:</label>
+        <input type="text" id="user_id" name="user_id" required><br>
+        <label for="password">New Password:</label>
+        <input type="password" id="password" name="password" required><br>
+        <label for="token">Token:</label>
+        <input type="text" id="token" name="token" required><br>
+        <p style="color: gray;">Please contact the administrator to obtain a reset token.</p>
+        <input type="submit" value="Confirm">
+    </form>
+    <p><a href="/register">Register</a> 💠 <a href="/dashboard">Dashboard</a></p>
+</body>
+</html>
