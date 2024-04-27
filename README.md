@@ -1,6 +1,10 @@
 # OS-1
 **OS-1 System Implementation for IMWUT 2024 Paper 'Can Large Language Models Be Good Companions? An LLM-Based Eyewear System with Conversational Common Ground'**
 
+<div  align="center"> 
+<img src="assets/our_system.jpg" width = "500px" alt="Conceptual overview of OS-1 workflow." align=center />
+</div>
+
 ArXiv Preprint Link: https://arxiv.org/abs/2311.18251
 
 ## Introduction
@@ -18,6 +22,11 @@ The implementation of OS-1 adopts a hybrid architecture combining cloud and edge
 * The **edge component** is responsible for collecting visual and audio signals, uploading this data to cloud servers, and receiving feedback in the form of speech for dialogue responses. Developed on the Android platform, the configuration and deployment details are available in the [OS-1 Client](https://github.com/MemX-Research/OS-1/tree/main/OS-1%20Client) directory.
 * The **cloud component** handles visual and audio signal processing and utilizes large language models to drive multimodal understanding during dialogue, policy planning, memory generation, and retrieval, as well as dialogue generation. Configuration and deployment details for the edge component are available in the [OS-1 Server](https://github.com/MemX-Research/OS-1/tree/main/OS-1%20Server) directory.
 
+## Demo
+The following video demonstrates a usage scenario of interacting with the OS-1 prototype. For detailed smart eyewear hardware specifications, please refer to the paper.
+<div  align="center"> 
+<video src="/assets/demo.mp4" controls="controls" width="600px" alt="Demo video of OS-1." align=center></video>
+</div>
 
 ## Citation
 If you find OS-1 useful for your research and applications, please cite it using the following BibTeX:
