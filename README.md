@@ -2,7 +2,7 @@
 **OS-1 System Implementation for IMWUT 2024 Paper 'Can Large Language Models Be Good Companions? An LLM-Based Eyewear System with Conversational Common Ground'**
 
 <div  align="center"> 
-<img src="assets/our_system.jpg" width = "500px" alt="Conceptual overview of OS-1 workflow." align=center />
+<img src="assets/Our_system.jpg" width = "500px" alt="Conceptual overview of OS-1 workflow." align=center />
 </div>
 
 ArXiv Preprint Link: https://arxiv.org/abs/2311.18251
@@ -25,7 +25,10 @@ The implementation of OS-1 adopts a hybrid architecture combining cloud and edge
 ## Demo
 The following video demonstrates a usage scenario of interacting with the OS-1 prototype. For detailed smart eyewear hardware specifications, please refer to the paper.
 <div  align="center"> 
-<video src="/assets/demo.mp4" controls="controls" width="600px" alt="Demo video of OS-1." align=center></video>
+<video controls="controls" width="600px" alt="Demo video of OS-1." align=center>
+<source src="assets/demo.mp4">
+<img src="assets/demo.png">
+</video>
 </div>
 
 ## Citation
