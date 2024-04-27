@@ -24,12 +24,9 @@ The implementation of OS-1 adopts a hybrid architecture combining cloud and edge
 
 ## Demo
 The following video demonstrates a usage scenario of interacting with the OS-1 prototype. For detailed smart eyewear hardware specifications, please refer to the paper.
-<div  align="center"> 
-<video controls="controls" width="600px" alt="Demo video of OS-1." align=center>
-<source src="assets/demo.mp4">
-<img src="assets/demo.png">
-</video>
-</div>
+
+https://github.com/MemX-Research/OS-1/assets/46283941/c9ed2806-7764-4421-85d5-6f1ce15f4f38
+
 
 ## Citation
 If you find OS-1 useful for your research and applications, please cite it using the following BibTeX:
